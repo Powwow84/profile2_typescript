@@ -4,19 +4,34 @@ import {
   Route,
 } from 'react-router-dom'
 import './App.css'
-import NavBar from './components/navBar'
+import NavBar from './components/navBar/navBar'
+import Home from './components/home/home'
+import Projects from './components/projects/projects'
+import Contact from './components/contact/contact'
+import About from './components/about/about'
 
 function App() {
   return(
     <>
     <Router>
-      <NavBar>
-
-      </NavBar>
+      <NavBar/>
       <Routes>
-        <Route>
-
-        </Route>
+        <Route
+          path='/'
+          element={<Home />}
+        />
+        <Route 
+          path='/projects'
+          element={<Projects />}
+        />
+        <Route 
+        path='/about'
+        element={<About />}
+        />
+        <Route 
+        path='/contact'
+        element={<Contact />}
+        />
       </Routes>
     </Router>
     </>
