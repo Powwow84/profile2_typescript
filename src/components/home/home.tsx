@@ -1,5 +1,8 @@
 export default function Home(){
     return(
-        <>Welcome Home</>
+        <div className='homeLayout'>
+            <div className='homeContainer'></div>
+            <div className='homeContainer'></div>
+        </div>
     )
 }
